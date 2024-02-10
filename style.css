@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #222222;
+}
+
+.Container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-family: Roboto;
+}
+
+.prevent-select {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.Key {
+  position: absolute;
+  color: #2e2e2e;
+  font-size: 2.5em;
+  cursor: default;
+}
+
+.Poem {
+  width: 100vw;
+  text-align: center;
+  color: #DDDDDD;
+  transform: translateX(100vw);
+}
+
+.A {
+  top: 2%;
+  left: 2%;
+  transform: rotate(-20deg);
+  display: none;
+}
+
+.B {
+  top: 20%;
+  left: 95%;
+  transform: rotate(28deg);
+  display: none;
+}
+
+.C {
+  top: 93%;
+  left: 25%;
+  transform: rotate(10deg);
+  display: none;
+}
+
+.D {
+  top: 45%;
+  left: 5%;
+  transform: rotate(4deg);
+  display: none;
+}
+
+.E {
+  top: 90%;
+  left: 65%;
+  transform: rotate(-22deg);
+  display: none;
+}
+
+.F {
+  top: 94%;
+  left: 1%;
+  transform: rotate(6deg);
+  display: none;
+}
+
+.G {
+  top: 37%;
+  left: 54%;
+  transform: rotate(4deg);
+  display: none;
+}
+
+.H {
+  top: 26%;
+  left: 22%;
+  transform: rotate(-7deg);
+  display: none;
+}
+
+.I {
+  top: 66%;
+  left: 14%;
+  transform: rotate(7deg);
+  display: none;
+}
+
+.J {
+  top: 80%;
+  left: 40%;
+  transform: rotate(5deg);
+  display: none;
+}
+
+.K {
+  top: 8%;
+  left: 20%;
+  transform: rotate(-8deg);
+  display: none;
+}
+
+.L {
+  top: 88%;
+  left: 93%;
+  transform: rotate(-15deg);
+  display: none;
+}
+
+.M {
+  top: 64%;
+  left: 60%;
+  transform: rotate(-5deg);
+  display: none;
+}
+
+.N {
+  top: 28%;
+  left: 37%;
+  transform: rotate(-6deg);
+  display: none;
+}
+
+.O {
+  top: 20%;
+  left: 70%;
+  transform: rotate(0deg);
+  display: none;
+}
+
+.P {
+  top: 53%;
+  left: 90%;
+  transform: rotate(-9deg);
+  display: none;
+}
+
+.Q {
+  top: 48%;
+  left: 17%;
+  transform: rotate(-8deg);
+  display: none;
+}
+
+.R {
+  top: 5%;
+  left: 77%;
+  transform: rotate(11deg);
+  display: none;
+}
+
+.S {
+  top: 38%;
+  left: 76%;
+  transform: rotate(18deg);
+  display: none;
+}
+
+.T {
+  top: 20%;
+  left: 10%;
+  transform: rotate(-12deg);
+  display: none;
+}
+
+.U {
+  top: 67%;
+  left: 30%;
+  transform: rotate(8deg);
+  display: none;
+}
+
+.V {
+  top: 70%;
+  left: 80%;
+  transform: rotate(6deg);
+  display: none;
+}
+
+.W {
+  top: 4%;
+  left: 33%;
+  transform: rotate(-9deg);
+  display: none;
+}
+
+.X {
+  top: 15%;
+  left: 45%;
+  transform: rotate(7deg);
+  display: none;
+}
+
+.Y {
+  top: 80%;
+  left: 51%;
+  transform: rotate(2deg);
+  display: none;
+}
+
+.Z {
+  top: 5%;
+  left: 63%;
+  transform: rotate(-9deg);
+  display: none;
+}
+
+.Key:hover span {
+  display: none !important;
+}
+
+.A:hover::before {
+  content: "K";
+}
+
+.B:hover::before {
+  content: "N";
+}
+
+.C:hover::before {
+  content: "P";
+}
+
+.D:hover::before {
+  content: "L";
+}
+
+.E:hover::before {
+  content: "H";
+}
+
+.F:hover::before {
+  content: "S";
+}
+
+.G:hover::before {
+  content: "U";
+}
+
+.H:hover::before {
+  content: "C";
+}
+
+.I:hover::before {
+  content: "R";
+}
+
+.J:hover::before {
+  content: "O";
+}
+
+.K:hover::before {
+  content: "A";
+}
+
+.L:hover::before {
+  content: "M";
+}
+
+.M:hover::before {
+  content: "G";
+}
+
+.N:hover::before {
+  content: "B";
+}
+
+.O:hover::before {
+  content: "I";
+}
+
+.P:hover::before {
+  content: "E";
+}
+
+.Q:hover::before {
+  content: "D";
+}
+
+.R:hover::before {
+  content: "V";
+}
+
+.S:hover::before {
+  content: "Q";
+}
+
+.T:hover::before {
+  content: "X";
+}
+
+.U:hover::before {
+  content: "Y";
+}
+
+.V:hover::before {
+  content: "Z";
+}
+
+.W:hover::before {
+  content: "F";
+}
+
+.X:hover::before {
+  content: "J";
+}
+
+.Y:hover::before {
+  content: "W";
+}
+
+.Z:hover::before {
+  content: "T";
+}
+
+.show-character {
+  display: inline-block;
+}
